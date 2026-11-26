@@ -36,7 +36,7 @@ Digite a opção desejada: """))
                 print(f"A ferramenta: {encontrar_ferramenta} já foi cadastrada.")
                 
         case 5:
-            excluir_ferramenta = input("Qual ferramenta você deseja remover ?")
+            excluir_ferramenta = input("Qual ferramenta você deseja remover ?").lower().strip().title()
             if excluir_ferramenta in ferramentas:
                 ferramentas.remove(excluir_ferramenta)
                 print(f"A {excluir_ferramenta} foi removida com sucesso !")
